@@ -9,7 +9,7 @@ body{
 
 #header-nav .container{
 	margin-left: 10px;
-	height: 80px;
+	
 }
 
 #header-nav{
@@ -54,12 +54,28 @@ body{
 	text-align: center;
 	color: #f01f49;
 }
+/*for large devices*/
+@media (min-width: 1200px){
+	#header-nav{
+		height: 120px;
+		}
+
+	}
 /*for medium devices*/
-@media(min-width: 992px and max-width: 1199px){}
+@media (min-width: 992px) and (max-width: 1199px){
+	#header-nav{
+		height: 100px;
+		}
+
+	}
 
 /*for small devices*/
 
-@media(min-width: 768px and max-width: 991px){}
+@media (min-width: 768px) and (max-width: 991px){
+	#header-nav{
+		height: 80px;
+		}
+	}
 
 /*for xs devices*/
 
@@ -67,36 +83,34 @@ body{
 	.navbar-brand h1{
 		font-size: 6vw;
 	}
-/*#collapsable-nav{
-	padding-top: 30px;
-}*/
 
-#collapsable-nav a{
-	text-align: center;
-	font-size: 1.2em;
+	#collapsable-nav a{
+		text-align: center;
+		font-size: 1.2em;
 
-}
-#collapsable-nav a:hover{
-	background-color: #eaa45d;
-}
-#nav-list{
-	background-color: #a5f698;
-}	
-#nav-list a{
-	color: #642690;
-	font-size: 1.2em;
-}
+	}
+	#collapsable-nav a:hover{
+		background-color: #eaa45d;
+	}
+	#nav-list{
+		background-color: #a5f698;
+	}	
+	#nav-list a{
+		color: #642690;
+		font-size: 1.2em;
+	}
 
-hr{
-	margin-bottom: 0;
-	margin-top: 0;
-	border: .5px solid black;
-}
-#main-content .container{
-	margin-top: 100px;
-}
-.col-xs-12{
-	margin-left: 20px;
-	margin-right: 20px;
-}
+	hr{
+		margin-bottom: 0;
+		margin-top: 0;
+		border: .5px solid black;
+	}
+	div #main-content .container{
+		margin-top: 100px;
+		width: 300px;
+	}
+	.col-xs-12{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 }
